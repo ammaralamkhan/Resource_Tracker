@@ -1,0 +1,25 @@
+/* ================================================================
+   MAIN LAYOUT
+   ================================================================ */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.layout-content {
+  flex: 1;
+  margin-top: var(--navbar-height);
+  padding: var(--space-8);
+  transition: margin-left var(--transition-slow);
+  background: var(--color-bg-primary);
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+.layout-content.sidebar-expanded {
+  margin-left: var(--sidebar-width);
+}
+
+.layout-content.sidebar-collapsed {
+  margin-left: var(--sidebar-collapsed-width);
+}

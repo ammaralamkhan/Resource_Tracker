@@ -1,0 +1,25 @@
+{
+  "name": "real-time-resource-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-Time Resource Tracker for CS Department — AMU",
+  "workspaces": [
+    "shared_types",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "npm run build --workspace=client",
+    "build:server": "npm run build --workspace=server",
+    "db:migrate": "npm run db:migrate --workspace=server",
+    "db:seed": "npm run db:seed --workspace=server",
+    "db:seed:usecase": "npm run db:seed:usecase --workspace=server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.7.3"
+  }
+}

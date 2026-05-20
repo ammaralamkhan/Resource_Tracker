@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "..",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["../shared_types/*"]
+    }
+  },
+  "include": ["src/**/*", "../shared_types/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

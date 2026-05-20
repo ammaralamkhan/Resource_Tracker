@@ -1,0 +1,40 @@
+# ─── Dependencies ─────────────────────────────────
+node_modules/
+
+# ─── Build output ─────────────────────────────────
+dist/
+
+# ─── Environment variables ────────────────────────
+.env
+.env.*
+
+# ─── Logs ─────────────────────────────────────────
+*.log
+
+# ─── OS files ─────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Test coverage ────────────────────────────────
+coverage/
+
+# ─── Uploads (user-generated content) ─────────────
+uploads/
+
+# ─── Dissertation & academic files ────────────────
+Project_Dissertation/
+Dissertation_LaTeX.zip
+final dissertation ammar alam khan.pdf
+Viva_Presentation.pptx
+anti_hallucination_dissertation_prompt.md
+extracted_content.md
+Implementation.md
+Project_Documentation.md
+Project_Report.md
+Project_Cheat_Sheet.md
+Project_Cheat_Sheet.pdf
+
+# ─── One-off scripts / SQL patches ───────────────
+fix_hash.sql
+seed_dummy_users.sql
+restore_chairman.ts
